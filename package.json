@@ -1,0 +1,22 @@
+{
+  "name": "react-express-quick-start",
+  "version": "1.0.0",
+  "description": "React and Express Full Stack Development - Quick Start",
+  "main": "server.js",
+  "scripts": {
+    "server-install": "npm install",
+    "client-install": "npm install --prefix frontend",
+    "backend": "nodemon server.js",
+    "frontend": " npm run start --prefix ./frontend",
+    "full": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "author": "Mustafa Murat Coşkun",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
